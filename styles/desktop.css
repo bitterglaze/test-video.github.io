@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.content {
+  width: 100vw;
+  height: calc(100vh - 150px);
+  margin-top: 3px;
+  background-color: black;
+  position: absolute;
+
+}
+
+iframe {
+  position: relative;
+  height: 360px;
+  width: 640px;
+  margin-top: 40px;
+  margin-left: 340px;
+  margin-bottom: 20px;
+
+
+}
+.card-text {
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 48px;
+  /* text-align:center; */
+  color: white;
+  margin-right: 30px;
+  margin-top: 40px;
+  line-height: 115px;
+}
