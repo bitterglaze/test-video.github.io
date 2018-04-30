@@ -2,23 +2,35 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>playground</title>
+  <title>backgroundvideo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-     <section class="container">
-       <!-- <div class="content"></div> -->
-        <p class="card-text">I watched the storm so beautiful yet terrific</p>
+
+    <section class="container">
+        <div class="card-img image-1">
     </section>
 
-    <section class="content">
-          <iframe  src="https://www.youtube.com/embed/6-BI-iUk9Vg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </section>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="jquery.backgroundvideo.min.js"></script>
 
-
-
+    <script>
+    $(document).ready(function() {
+      var videobackground = new $.backgroundVideo($('body'), {
+        "align": "centerXY",
+        "width": 1280,
+        "height": 720,
+        "path": "video/",
+        "filename": "Brunettes Shoot Blondes - Bittersweet (Official Video)",
+        "types": ["mp4","ogg","webm"],
+        "preload": true,
+        "autoplay": true,
+        "loop": true
+      });
+    });
+  </script>
 
 </body>
 </html>
